@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'rexheadline';
+    src: url('fonts/goodfoot-webfont.eot');
+    src: url('fonts/goodfoot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/goodfoot-webfont.woff') format('woff'),
+         url('fonts/goodfoot-webfont.ttf') format('truetype'),
+         url('fonts/goodfoot-webfont.svg#rexheadlineScriptRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-smooth: always;
+}
+@font-face {
+    font-family: 'rexbasefont';
+    src: url('fonts/Aaargh-webfont.eot');
+    src: url('fonts/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Aaargh-webfont.woff') format('woff'),
+         url('fonts/Aaargh-webfont.ttf') format('truetype'),
+         url('fonts/Aaargh-webfont.svg#AaarghNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-smooth:always;
+}
+
+/*global formatting*/
+body, img, dl, dt, dd, uo, ol, h1, h2, h3, h4, h5, h6, pre, fieldset, input, p, blockquote, a, p, ul, li, div{
+	margin:0;padding:0;font-family:rexbasefont, Arial, sans-serif;border:none;outline:0px solid black;}
+table, tr, td{margin:0;padding:0;border:0;}
+body{color:#000;font-size:62.5%;}
+
+.copy{color:#000;font-weight:normal;text-align:left;}
+h1,h2,h3,h4{font-weight:normal;font-style:normal;}
+h1{font-family:rexheadline, arial;font-size:15em;color:#a3001b;white-space:nowrap;}
+h2{font-size:1.6em;font-weight:bold;}
+h3{font-size:1.2em;}
+a:link, a:visited, a:active, a{color:#a3001b;text-decoration:none;}
+a:hover{color:#999;}
+a:link.accent, a:visited.accent, a:active.accent, a.accent{color:#a3001b;}
+a:hover.accent{color:#666;}
+.accent{color:#000000;}
+.strong{font-weight:bold;}
+.highlight{color:#a3001b;}
+
+/*base positioning alignment size*/
+.page{width:100%;margin:0;padding:0;}
+.pagebody{width:780px;margin:0 auto;}
+.header{clear:both;position:relative;z-index:20;width:780px;margin:0 auto;padding-right:20px;padding-top:10px;}
+.meat{z-index:10; margin-top: 120px;}
+.left{min-height:550px;width:50%;float:left;z-index:10;}
+#media .left{width:230px;}
+.right{display: block; position: relative;min-height:550px;width:50%;float:right;z-index:10;}
+#media .right{height:890px;width:470px;top:-80px;left:-28px;position:relative;}
+.medialink{margin:5px 0;}
+.medialink a{font-size:13px;}
+.donations{font-size:14px;font-weight:bold;color:#000;}
+.footer{clear:both;z-index:100;min-width:800px;position:relative;right:50px;}
+
+/*header specific*/
+.header{font-size:1.8em;letter-spacing:.5px; right:90px;}
+.headerlogo{position:relative;float:left;}
+.headerlinks{position:relative;right:10px;padding:15px 0 5px 0;position:relative;float:right;
+			border-bottom:1px solid #999;}
+.header li{position:relative;float:left;margin-right:25px;
+			list-style-type:none;}
+.header li a{text-decoration:none;}
+.header a:hover{color:#999;}
+a#here{font-weight:bold;color:#bb0404;}
+a:hover#here{color:#000;}
+a#foothere{font-weight:bold;color:#000;}
+
+/*table design*/
+#table-design{
+  margin-left: -90px;
+  padding-bottom: 50px;
+}
+#table-design thead {margin-top: 20
+	width: 100%;
+
+}
+#table-design td {
+	padding: 5px 5px 5px 0;
+	vertical-align: top;
+}
+#table-design thead th {
+	padding-right: 10px;
+	text-align: left;
+}
+
+/*footer specific*/
+.footer{font-size:1.3em;text-shadow:0 0 0 transparent, 0 0 4px #fff;
+  position: sticky; bottom: 10px; width: 100%;
+  white-space:nowrap; text-align:center; }
+.footer a{color:#a3001b;font-weight:bold;}
+.footer a:hover{color:#000;}
+.copyright{font-family:arial, sans-serif;}
+
+/*comingsoon*/
+#soonheader{position:relative;bottom:50px;left:40px;}
+.soonimg{position:relative;right:300px;top:200px;}
+
+/*positioning logic: align all copy content to the header first,
+then align the overall container element
+within the "left" or "right" block elements*/
+
+/*HOME specific*/
+.homecontainer{position:relative;width:220px;bottom:35px;left:33px; font-family: 'Dancing Script', cursive;}
+#homeheader{position:relative; margin-top: 20px;
+			font-size:10em; font-family: 'Dancing Script', cursive;}
+.homestretch{position:relative;left:30px; font-family: 'Dancing Script', cursive;}
+#homecopy{position:relative;bottom:50px;left:52px; margin-top: 20px;
+			font-size:1.5em;color:#000;text-align:center;}
+#homecopy li{position:relative;min-width:170px;margin-bottom:5px;
+			text-align:center;list-style-type:none;}
+.welovedogs{position:relative;margin-bottom:-10px;
+			font-size:1.6em;font-weight:bold;margin-left:-15px;
+      padding-top: 10px;}
+.plainandsimple{position:relative;text-align:right;width:220px;
+			font-size:1.2em;}
+.homeimg{position:relative;bottom:50px;right:15px;}
+
+/*SHOP specific*/
+.shopcontainer{width:275px;position:relative;left:80px;bottom:20px;}
+#shopheader{float: left;
+    font-size: 10em;
+    left: -20px;
+    line-height: 0.65em;
+    margin: 0 0 65px;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    width: 250px;
+    z-index: 51;}
+#shopcopy{clear:both;position:relative;right:80px;}
+#shopnav{position:relative;left:5px;
+			text-align:center;font-size:1.3em;}
+.shoplist li{position:relative;float:right;min-width:70px;margin-bottom:5px;
+			text-align:center;list-style-type:none;}
+.shoplistmiddle{border-right:1px #999 solid;border-left:1px #999 solid;}
+.shoplist li.last{border-left:1px #999 solid;}
+#shopcopy p{position:relative;width:270px;padding-top:25px;left:43px;
+			font-size:1.3em;clear:both;text-align:justify;}
+#shopcopy a:hover{color:#999;}
+#shopcopy p:first-line{float:none;color:#000;font-size:1.2em;}
+.shopimg{position:relative;bottom:40px;right:60px;z-index:-1;}
+
+/*SELECTION specific*/
+.brandlisting h4{font-family:rexheadline;font-size:170%;color:#000;}
+.brandheader{font-size:9em;margin-left:-70px;margin-top:-60px;}
+.brandlisting{margin-left:-20px;margin-top:-10px;}
+.brandlisting td{vertical-align:top;padding-right:10px;}
+.brandlisting li{list-style-type:none;font-size:1.5em;text-align:left;}
+.brandlisting ul{width:160px;margin-bottom:20px;}
+.brandright{padding-left:10px;}
+.brandright li{text-align:left;}
+.brandcare{text-align:center;font-size:140%;width:400px;margin-left:-65px;margin-top:0px;}
+.brandimg{margin-left:-40px;}
+
+/*MEDIA specific*/
+.mediaimg{position:relative;top:5px;right:75px;}
+.mediacontainer{width:470px;position:relative;float:right;z-index:10;}
+#mediaheader{position:relative;margin-left:100px;top:30px;
+  padding-bottom: 30px; font-family: 'Dancing Script', cursive;}
+
+/*WASH specific*/
+.recimg{position:relative;top:5px;right:0px;z-index:-2;}
+.recipecontainer{width:335px;position:relative;float:left;margin-top:-60px;right:40px;z-index:-1;}
+#recipeheader{float: left; font-size: 10em;left:50px;margin: 0;position: relative;text-align: center;width: 300px;z-index: 51;}
+#recipecopy{clear:both;position:relative;
+			font-size:1.3em;}
+.washfirst{width:300px;text-align:justify;}
+.recipefirstline{width:300px;color:#000;font-size:1.2em;text-align:center;}
+#washprice{width:325px;position:relative;padding:10px 0;
+			font-weight:bold;float:left;}
+#washprice div.text{font-weight:normal;position:relative;float:left;text-align:left;
+			margin-right:25px;min-width:20px;}
+#washprice div{font-weight:normal;position:relative;float:left;text-align:left;
+			margin-right:10px;min-width:20px;}
+#washprice span{font-weight:normal;font-size:.8em;position:relative;float:left;}
+#homemade-recipes{float:left;z-index:5000;font-size:1.2em;margin: 10px 0 30px;position: relative; right: 30px;width: 370px;}
+#homemade-recipes ul{margin-left:3px;width:330px;}
+#homemade-recipes li{list-style:circle inside;font-weight:normal;}
+#homemade-recipes p{margin-top:10px;}
+.washetiquette{position:relative;top:0px;font-size:1.3em;text-align:center;}
+
+/*GROOM specific*/
+.groomcontainer{position:relative;margin-left:35px;}
+.one{border:1px solid green;}
+.two{border:1px solid red;}
+.three{border:1px solid purple;}
+#groomheader {
+    float: left;
+    font-size: 10em;
+    left: 22px;
+    line-height: 0.65em;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: -40px;
+    width: 300px;
+    z-index: 51;
+}
+#groomcopy, .groomcopy{position:relative;display:block;position:relative;top:0px;left:0;width:300px;}
+#groomcopy p, .groomcopy p{width:300px;margin-bottom:13px;
+			font-size:1.3em;text-align:justify;}
+#groomcopy p.first:first-line{color:#000;font-size:1.2em;}
+.groomnav{width:300px;text-align:center;position:relative;right:20px;font-size:1.3em;font-weight:bold;color:#000;margin-bottom:60px;}
+.groomnav a{margin-top:12px;display:block;
+			color:#a3001b;font-weight:bold;font-size:1.3em;}
+
+.groomimg{position:relative;right:20px;}
+.groomimg2{position:relative;right:0;}
+
+.groomerpic{position:relative;float:right;margin: 0 20px;}
+
+.groomer .left{position:relative;float:left;}
+.groomer #groomcopy{}
+.groomer .groomcopy{width:320px;top:0;}
+.groomer #groomcopy p{width:320px;}
+.groomer .groomimg{}
+.groomer .groomcontainer{}
+
+div.groomer #groomheader{
+	left: 250px;
+	line-height: 1em;
+	margin: 0 30px 0 0;
+	top: -50px;
+	width: 500px;
+}
+
+.groomerlist{list-style:none;font-size:1.3em;}
+.groomerlist li{margin-top:5px;}
+
+.groomerlistheader{font-size:1.5em;font-weight:bold;}
+
+
+
+/*RULES specific*/
+.rulesimg{position:relative;right:90px;z-index:-400;}
+.rulescontainer{position:relative;bottom:105px;left:40px;z-index:-20;}
+.rulesheader{z-index:-20;font-size:10em;margin-top:45px;margin-left:-85px;}
+#rulescopy{position:relative;bottom:-10px;right:60px;width:280px;}
+#rulescopy p{margin-top:15px;
+			font-size:1.3em;}
+.rulesp:first-line{color:#000;}
+#rulescopy span{margin-left:20px;text-align:left;}
+
+/*CONTACT specific*/
+.infomapcontainer{position:relative;left:40px;bottom:60px; margin-top:-50px;}
+#infoheader{position:relative;left:110px; font-family: 'Dancing Script', cursive;}
+#infomap{position:relative;bottom:40px;}
+#infomapcopy{position:relative; border-top:1px solid #999;padding-top:0px; margin-right:-45px;font-size:1.2em;}
+#infomapcopy p:first-line{float:none;color:#000;font-size:1.1em;}
+#infocontact{position:relative;left:110px;top:110px;
+				text-align:left;font-size:1.3em;}
+#infocontact ul{position:relative;float:left;clear:both;}
+#infocontact li{position:relative;list-style:none;float:left;min-width:150px;overflow:visible;}
+
+
+/*JOB specific*/
+.jobsimg{position:relative;z-index:-1;top:18px;left:60px;}
+.jobscontainer{position:relative;left:45px;bottom:100px;}
+#jobsheader{width:300px;position:relative;}
+#jobscopy{height:260px;width:280px;position:relative;right:50px;margin-top:0px;}
+#jobscopy p{font-size:1.3em;margin-bottom:11px;text-align:justify;}
+#jobscopy ul{font-size:1.3em;list-style-type:circle;margin-left:70px;}
+p.first:first-line {color:#000;font-size:1.2em;}
+
+.scared-dog{position:relative;float:right;display:block;}
+
+#emergency_contact{padding:50px;margin:0 auto;width:900px;}
+#emergency_contact	h3{font-size:20px;font-weight:bold;color:#000;margin-bottom:20px;}
+#emergency_contact .contact{font-size:13px;font-weight:normal;margin-bottom:15px;}
+#emergency_contact .contact a{color:#a3001b; white-space:nowrap;}
+#emergency_contact .contact .area{font-style:italic;}
+
+.store-image{position:relative;margin:20px 0;}
+.info{position:relative;float:left;}
+.info_temp{position:relative;float:left;}
+
+#tubs .middle{top:-60px;position:relative;}
+#tubs .recipecontainer{width:650px;position:relative;float:left;left:60px;margin-top:0;}
+#tubs #recipeheader{float:right;margin-bottom:25px;left:-24px;}
+#tubs .infoimage{margin:15px 0;}
+#tubs .zeus{float:left;position:relative;margin-top:0;margin-right:15px;}
+#tubcopy .info{font-size:1.3em;}
+
+#dog-recipes .right{display: block;float: right;min-height: 550px;position: relative;width: 50%;z-index: 10;top:-60px;}
+#dog-recipes .recipecontainer{width:400px;margin-top:0;}
+#dog-recipes #recipecopy{width:400px;}
+#dog-recipes .pagebody{width:840px;}
+#dog-recipes .washfirst, #dog-recipes .recipefirstline{width:400px;}
+
+#wash-price{width:370px;font-size:1.2em;position:relative;float:left;display:inline-block;margin-bottom:15px;}
+#wash-price .table-right{width:48%;float:right;position:relative;}
+#wash-price .table-left{width:48%;clear:both;float:left;position:relative;right:30px;}
+#wash-price td{height:20px;}
+#wash-price th{height:20px;font-weight:bold;}
+#wash-price .text{width:90%;}
+
+#dog-shop .right{left:30px;top:100px;}
+#dog-shop #shopheader{left: 115px;margin-bottom:20px;top: -20px;width: 300px;}
+#dog-shop .shopcontainer{width:400px;}
+#dog-shop .info{font-size:1.3em;}
+h3.selection-link{font-size:2.1em;text-align:center;}
+.infoimage{margin-top:20px;}
+
+#dog-shop .shoplist li{min-width:65px;float:left}
+#dog-shop .shopimg{right:20px;}
+#dog-shop .infoimage img{margin:15px 0;}
+.dog-shop-image{clear: both;margin-bottom: 20px;position: relative;right: 80px;}

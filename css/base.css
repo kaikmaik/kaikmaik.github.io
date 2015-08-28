@@ -1,0 +1,32 @@
+.container{
+  position: relative;
+  margin: 0 auto;
+  padding: 0px 50px;
+  max-height:none;
+  height: auto;
+}
+
+.logo{
+  position: static;
+  display: table;
+  height: auto !important;
+  float: left;
+  padding: 0px;
+  border: none;
+  width: auto;
+  margin-top: -20px;
+  margin-left: 150px;
+}
+
+.navbar{
+
+  margin-top: 40px;
+}
+.footer{font-size:1.3em;text-shadow:0 0 0 transparent, 0 0 4px #fff;white-space:nowrap;text-align:center;}
+.footer a{color:#a3001b;font-weight:bold;}
+.footer a:hover{color:#000;}
+.copyright{font-family:arial, sans-serif;}
+
+.footer{
+
+}
